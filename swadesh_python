@@ -1,0 +1,10 @@
+from nltk.corpus import swadesh
+
+languages = ['en', 'ro', 'es', 'fr', 'pt', 'la']
+
+for i in [100, 141, 143]:
+
+    print swadesh.entries(languages)[i]
+
+# what is wrong? It would render: "File "<stdin>", line 2"
+# And "SyntaxError: invalid syntax complainng about the dot in "swadesh.entries"
